@@ -78,7 +78,7 @@ function App() {
 
           {/* Stepper visual */}
           <div className="stepper">
-            <div className={`step-dot ${step === "select" ? "active" : step !== "select" ? "done" : ""}`}>
+            <div className={`step-dot ${step === "select" ? "active" : "done"}`}>
               <span>1</span>
             </div>
             <div className={`step-line ${step !== "select" ? "done" : ""}`} />
