@@ -1,0 +1,39 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nicehash/tauri/v2/tooling/cli/schema.json",
+  "productName": "Recovery Rust",
+  "version": "0.1.0",
+  "identifier": "com.recovery.rust",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:1420",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Recovery Rust — Recuperação de Dados",
+        "width": 1100,
+        "height": 750,
+        "center": true,
+        "resizable": true,
+        "decorations": true,
+        "minWidth": 900,
+        "minHeight": 600
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png"
+    ]
+  }
+}
